@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Espaço da Géssica | Lazer, Conforto e Momentos Especiais</title>
+  <meta name="description" content="Conheça o Espaço da Géssica e viva momentos especiais em um ambiente pensado para lazer, conforto e experiências inesquecíveis.">
+  <meta name="theme-color" content="#a83b65">
+
+  <!-- Open Graph (compartilhamento em redes sociais) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Espaço da Géssica | Lazer, Conforto e Momentos Especiais">
+  <meta property="og:description" content="Conheça o Espaço da Géssica e viva momentos especiais em um ambiente pensado para lazer, conforto e experiências inesquecíveis.">
+  <!-- SUBSTITUIR: imagem de compartilhamento (1200x630) e URL final do site -->
+  <meta property="og:image" content="imagens/og.jpg">
+  <meta property="og:url" content="https://SEU-DOMINIO-AQUI.com.br/">
+
+  <!-- Favicon provisório (substituir por favicon oficial) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23073B4C'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23ffffff'%3EG%3C/text%3E%3C/svg%3E">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.foto img{opacity:1!important}[data-revelar]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+
+<!--
+  ============================================================
+  COMO TROCAR AS IMAGENS
+  ============================================================
+  1. Crie uma pasta chamada "imagens" ao lado deste arquivo.
+  2. Salve as fotos reais do Espaço da Géssica com os nomes indicados
+     em cada comentário (ex.: imagens/hero.jpg).
+  3. Enquanto uma foto não existir, o site mostra um fundo provisório;
+     os cards da galeria e de experiências não exibem nomes de arquivos.
+  Tamanhos sugeridos: hero 2400px de largura; demais 1400px.
+  ============================================================
+-->
+<body>
+
+<a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ====================== CABEÇALHO ====================== -->
+<header class="cabecalho" id="cabecalho">
+  <div class="cabecalho__interno">
+    <a class="logo" href="#inicio" aria-label="Espaço da Géssica — ir para o início">
+      <span class="logo__linha-1">Espaço da</span>
+      <span class="logo__linha-2">Géssica</span>
+    </a>
+
+    <nav class="menu" id="menu" aria-label="Navegação principal">
+      <ul class="menu__lista">
+        <li><a class="menu__link" href="#inicio">Início</a></li>
+        <li><a class="menu__link" href="#espaco">O espaço</a></li>
+        <li><a class="menu__link" href="#experiencias">Experiências</a></li>
+        <li><a class="menu__link" href="#galeria">Galeria</a></li>
+        <li><a class="menu__link" href="#localizacao">Localização</a></li>
+        <li><a class="menu__link" href="#contato">Contato</a></li>
+      </ul>
+      <a class="botao botao--menu" href="#contato">
+        Reserve seu momento
+        <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </nav>
+
+    <button class="hamburguer" id="hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span class="hamburguer__linha"></span>
+      <span class="hamburguer__linha"></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+    <!-- Ilustração original da piscina, criada para o Espaço da Géssica -->
+    <div class="hero__midia foto tom-dia" data-arquivo="imagens/piscina-hero.svg" data-parallax="0.12">
+      <img src="assets/img/piscina-hero.svg" alt="Ilustração ensolarada da piscina e da área de lazer do Espaço da Géssica" fetchpriority="high">
+      <span class="hero__reflexo" aria-hidden="true"></span>
+    </div>
+    <div class="hero__veu" aria-hidden="true"></div>
+
+    <div class="hero__conteudo">
+      <span class="hero__etiqueta">Seu refúgio de lazer</span>
+      <p class="hero__chamada">Um lugar para viver momentos especiais</p>
+      <h1 class="hero__titulo" id="titulo-hero">
+        <span class="hero__linha"><span>Onde o lazer</span></span>
+        <span class="hero__linha"><span>se torna memória.</span></span>
+      </h1>
+      <p class="hero__subtitulo">Um espaço pensado para você aproveitar,<br>celebrar e criar momentos inesquecíveis.</p>
+      <div class="hero__acoes">
+        <a class="botao botao--claro" href="#contato">
+          Reserve seu momento
+          <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="botao botao--vazado" href="#espaco">Conheça o espaço</a>
+      </div>
+    </div>
+
+    <a class="hero__rolar" href="#espaco" aria-label="Role para descobrir o espaço">
+      <span class="hero__rolar-texto">Role para descobrir</span>
+      <span class="hero__rolar-linha" aria-hidden="true"></span>
+    </a>
+  </section>
+
+  <!-- ====================== APRESENTAÇÃO ====================== -->
+  <section class="sobre secao" id="espaco" aria-labelledby="titulo-sobre">
+    <div class="sobre__grade">
+      <div class="sobre__texto">
+        <p class="rotulo" data-revelar>O Espaço da Géssica</p>
+        <h2 class="titulo-grande" id="titulo-sobre" data-revelar>
+          Mais do que um espaço.<br>Uma experiência.
+        </h2>
+        <p class="sobre__destaque" data-revelar>
+          Um espaço criado para transformar dias comuns em momentos especiais. Aqui, cada detalhe foi pensado para proporcionar conforto, diversão e experiências que ficam na memória.
+        </p>
+        <!-- SUBSTITUIR: texto institucional definitivo, quando disponível -->
+        <p class="sobre__apoio" data-revelar>
+          Um ambiente acolhedor, com a sensação de estar em um lugar só seu: para descansar, reunir quem você ama e aproveitar sem pressa.
+        </p>
+        <div data-revelar>
+          <a class="botao botao--escuro" href="#experiencias">
+            Conheça o espaço
+            <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sobre__imagem" data-revelar="escala">
+        <span class="sobre__moldura" aria-hidden="true"></span>
+        <!-- IMAGEM SOBRE — substituir por: imagens/sobre.jpg -->
+        <div class="sobre__foto" data-parallax="0.06">
+          <div class="foto tom-ceu" data-arquivo="imagens/sobre.jpg">
+            <img src="imagens/sobre.jpg" alt="Área da piscina do Espaço da Géssica" loading="lazy">
+          </div>
+        </div>
+        <!-- Selo giratório decorativo -->
+        <div class="selo" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="circulo-selo" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+            <text><textPath href="#circulo-selo" startOffset="0">Momentos especiais · Espaço da Géssica · </textPath></text>
+            <path class="selo__gota" d="M60 44c-7 9-11 14-11 20a11 11 0 0 0 22 0c0-6-4-11-11-20z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== O QUE VOCÊ ENCONTRA ====================== -->
+  <!--
+    ATENÇÃO: as categorias abaixo são apenas estrutura visual.
+    Confirme com a Géssica o que realmente existe no espaço e ajuste títulos e textos.
+  -->
+  <section class="encontra secao" id="experiencias" aria-labelledby="titulo-encontra">
+    <header class="secao__cabecalho secao__cabecalho--centro">
+      <p class="rotulo" data-revelar>O que você encontra</p>
+      <h2 class="titulo-grande" id="titulo-encontra" data-revelar>Tudo para aproveitar<br>cada momento</h2>
+      <p class="secao__subtitulo" data-revelar>Um ambiente pensado para tornar sua experiência ainda mais especial.</p>
+    </header>
+
+    <ul class="cartoes">
+      <li class="cartao" data-revelar>
+        <div class="foto tom-dia" data-arquivo="imagens/card-01.jpg"><img src="imagens/card-01.jpg" alt="Piscina do Espaço da Géssica" loading="lazy"></div>
+        <div class="cartao__texto">
+          <span class="cartao__numero">01</span>
+          <h3 class="cartao__titulo">Piscina</h3>
+          <p class="cartao__micro">Água, sol e descanso do seu jeito.</p>
+        </div>
+      </li>
+      <li class="cartao" data-revelar>
+        <div class="foto tom-verde" data-arquivo="imagens/card-02.jpg"><img src="imagens/card-02.jpg" alt="Área de lazer do Espaço da Géssica" loading="lazy"></div>
+        <div class="cartao__texto">
+          <span class="cartao__numero">02</span>
+          <h3 class="cartao__titulo">Área de lazer</h3>
+          <p class="cartao__micro">Espaço para conversar, brincar e relaxar.</p>
+        </div>
+      </li>
+      <li class="cartao" data-revelar>
+        <div class="foto tom-areia" data-arquivo="imagens/card-03.jpg"><img src="imagens/card-03.jpg" alt="Espaço gourmet do Espaço da Géssica" loading="lazy"></div>
+        <div class="cartao__texto">
+          <span class="cartao__numero">03</span>
+          <h3 class="cartao__titulo">Espaço gourmet</h3>
+          <p class="cartao__micro">Boas refeições em boa companhia.</p>
+        </div>
+      </li>
+      <li class="cartao" data-revelar>
+        <div class="foto tom-noite" data-arquivo="imagens/card-04.jpg"><img src="imagens/card-04.jpg" alt="Momento de confraternização no Espaço da Géssica" loading="lazy"></div>
+        <div class="cartao__texto">
+          <span class="cartao__numero">04</span>
+          <h3 class="cartao__titulo">Momentos especiais</h3>
+          <p class="cartao__micro">Celebrações que merecem um cenário à altura.</p>
+        </div>
+      </li>
+      <li class="cartao" data-revelar>
+        <div class="foto tom-ceu" data-arquivo="imagens/card-05.jpg"><img src="imagens/card-05.jpg" alt="Ambiente de conforto no Espaço da Géssica" loading="lazy"></div>
+        <div class="cartao__texto">
+          <span class="cartao__numero">05</span>
+          <h3 class="cartao__titulo">Conforto</h3>
+          <p class="cartao__micro">Ambiente acolhedor para todos os momentos do dia.</p>
+        </div>
+      </li>
+      <li class="cartao" data-revelar>
+        <div class="foto tom-profundo" data-arquivo="imagens/card-06.jpg"><img src="imagens/card-06.jpg" alt="Experiências no Espaço da Géssica" loading="lazy"></div>
+        <div class="cartao__texto">
+          <span class="cartao__numero">06</span>
+          <h3 class="cartao__titulo">Experiências</h3>
+          <p class="cartao__micro">Dias diferentes, memórias que permanecem.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================== EXPERIÊNCIA / CONCEITO ====================== -->
+  <section class="conceito" aria-labelledby="titulo-conceito">
+    <!-- IMAGEM CONCEITO — substituir por: imagens/experiencia.jpg -->
+    <div class="conceito__midia foto tom-profundo" data-arquivo="imagens/experiencia.jpg" data-parallax="0.1">
+      <img src="imagens/experiencia.jpg" alt="Espaço da Géssica ao entardecer" loading="lazy">
+    </div>
+    <div class="conceito__veu" aria-hidden="true"></div>
+    <div class="conceito__conteudo">
+      <h2 class="conceito__titulo" id="titulo-conceito" data-revelar>Um espaço para<br>celebrar a vida.</h2>
+      <span class="conceito__linha" aria-hidden="true" data-revelar></span>
+      <p class="conceito__texto" data-revelar>
+        Seja para relaxar, reunir pessoas especiais ou simplesmente aproveitar um dia diferente, o Espaço da Géssica foi pensado para transformar cada ocasião em uma experiência.
+      </p>
+      <div data-revelar>
+        <a class="botao botao--claro" href="#contato">
+          Quero conhecer
+          <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== GALERIA ====================== -->
+  <section class="galeria secao" id="galeria" aria-labelledby="titulo-galeria">
+    <header class="secao__cabecalho galeria__cabecalho">
+      <h2 class="titulo-grande" id="titulo-galeria" data-revelar>Viva o<br>espaço.</h2>
+      <p class="secao__subtitulo" data-revelar>Alguns momentos dizem mais do que mil palavras.</p>
+    </header>
+
+    <ul class="galeria__grade">
+      <!-- GALERIA 01 -->
+      <li class="galeria__item galeria__item--1" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 1 da galeria">
+          <div class="foto tom-dia" data-arquivo="imagens/galeria-01.jpg"><img src="imagens/galeria-01.jpg" alt="Foto 1 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+      <!-- GALERIA 02 -->
+      <li class="galeria__item galeria__item--2" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 2 da galeria">
+          <div class="foto tom-verde" data-arquivo="imagens/galeria-02.jpg"><img src="imagens/galeria-02.jpg" alt="Foto 2 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+      <!-- GALERIA 03 -->
+      <li class="galeria__item galeria__item--3" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 3 da galeria">
+          <div class="foto tom-areia" data-arquivo="imagens/galeria-03.jpg"><img src="imagens/galeria-03.jpg" alt="Foto 3 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+      <!-- GALERIA 04 -->
+      <li class="galeria__item galeria__item--4" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 4 da galeria">
+          <div class="foto tom-noite" data-arquivo="imagens/galeria-04.jpg"><img src="imagens/galeria-04.jpg" alt="Foto 4 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+      <!-- GALERIA 05 -->
+      <li class="galeria__item galeria__item--5" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 5 da galeria">
+          <div class="foto tom-ceu" data-arquivo="imagens/galeria-05.jpg"><img src="imagens/galeria-05.jpg" alt="Foto 5 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+      <!-- GALERIA 06 -->
+      <li class="galeria__item galeria__item--6" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 6 da galeria">
+          <div class="foto tom-profundo" data-arquivo="imagens/galeria-06.jpg"><img src="imagens/galeria-06.jpg" alt="Foto 6 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+      <!-- GALERIA 07 -->
+      <li class="galeria__item galeria__item--7" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 7 da galeria">
+          <div class="foto tom-verde" data-arquivo="imagens/galeria-07.jpg"><img src="imagens/galeria-07.jpg" alt="Foto 7 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+      <!-- GALERIA 08 (panorâmica) -->
+      <li class="galeria__item galeria__item--8" data-revelar="escala">
+        <button class="galeria__botao" type="button" aria-label="Ampliar foto 8 da galeria">
+          <div class="foto tom-dia" data-arquivo="imagens/galeria-08.jpg"><img src="imagens/galeria-08.jpg" alt="Foto 8 da galeria do Espaço da Géssica" loading="lazy"></div>
+          <span class="galeria__ver" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        </button>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====================== SEÇÃO CINEMATOGRÁFICA ====================== -->
+  <section class="destaque" aria-labelledby="titulo-destaque">
+    <!-- IMAGEM DESTAQUE — substituir por: imagens/destaque.jpg -->
+    <div class="destaque__imagem" data-parallax="0.08">
+      <div class="foto tom-ceu" data-arquivo="imagens/destaque.jpg">
+        <img src="imagens/destaque.jpg" alt="Momento de descanso no Espaço da Géssica" loading="lazy">
+      </div>
+      <div class="destaque__veu" aria-hidden="true"></div>
+      <div class="destaque__conteudo">
+        <h2 class="destaque__titulo" id="titulo-destaque" data-revelar>Um lugar para<br>desacelerar.</h2>
+        <p class="destaque__frase" data-revelar>Respire. Aproveite. Viva o momento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== RESERVAS / CTA ====================== -->
+  <section class="reservas secao" id="contato" aria-labelledby="titulo-reservas">
+    <div class="reservas__interno">
+      <p class="rotulo" data-revelar>Reservas</p>
+      <h2 class="titulo-grande" id="titulo-reservas" data-revelar>Seu próximo<br>momento especial<br>começa aqui.</h2>
+      <p class="secao__subtitulo" data-revelar>Entre em contato e descubra como reservar o Espaço da Géssica.</p>
+      <div class="reservas__acoes" data-revelar>
+        <!-- SUBSTITUIR: troque XXXXXXXXXXX pelo número com DDD (ex.: 5585999999999) -->
+        <a class="botao botao--principal" href="https://wa.me/55XXXXXXXXXXX" data-whatsapp target="_blank" rel="noopener">
+          Fale conosco
+          <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="botao botao--contorno" href="https://wa.me/55XXXXXXXXXXX" data-whatsapp target="_blank" rel="noopener">
+          Reserve agora
+          <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== LOCALIZAÇÃO ====================== -->
+  <section class="local secao" id="localizacao" aria-labelledby="titulo-local">
+    <div class="local__grade">
+      <div class="local__info">
+        <p class="rotulo" data-revelar>Localização</p>
+        <h2 class="titulo-grande" id="titulo-local" data-revelar>Como chegar</h2>
+        <address class="local__endereco" data-revelar>
+          <strong>Espaço da Géssica</strong>
+          Maracanaú — Ceará
+          <!-- SUBSTITUIR: endereço completo oficial (rua, número, bairro, CEP) -->
+          <span class="local__placeholder">[Endereço completo a ser informado]</span>
+        </address>
+        <div data-revelar>
+          <!-- SUBSTITUIR: link exato do Google Maps do espaço -->
+          <a class="botao botao--escuro" href="https://www.google.com/maps/search/?api=1&amp;query=Maracana%C3%BA+Cear%C3%A1" target="_blank" rel="noopener">
+            Abrir no Google Maps
+            <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="local__mapa" data-revelar="escala">
+        <!-- SUBSTITUIR: no Google Maps, use Compartilhar > Incorporar um mapa e cole o src do iframe aqui -->
+        <iframe title="Mapa de localização do Espaço da Géssica em Maracanaú, Ceará" src="https://www.google.com/maps?q=Maracana%C3%BA,+Cear%C3%A1&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ====================== RODAPÉ ====================== -->
+<footer class="rodape">
+  <div class="rodape__interno">
+    <div class="rodape__marca">
+      <a class="logo logo--rodape" href="#inicio" aria-label="Espaço da Géssica — voltar ao início">
+        <span class="logo__linha-1">Espaço da</span>
+        <span class="logo__linha-2">Géssica</span>
+      </a>
+      <p class="rodape__frase">Momentos especiais merecem um lugar especial.</p>
+    </div>
+
+    <nav class="rodape__nav" aria-label="Links do rodapé">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#espaco">O espaço</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="rodape__redes">
+      <p class="rodape__titulo">Acompanhe</p>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/__espacodagessica/" target="_blank" rel="noopener" aria-label="Instagram @__espacodagessica">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+            @__espacodagessica
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/55XXXXXXXXXXX" data-whatsapp target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8 19.2l-4.5 1.3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 8.5c.3 3 2.7 5.4 5.7 5.9l1.1-1.4-1.9-.9-.8.6a4.2 4.2 0 0 1-2-2l.6-.8-.9-1.9z" fill="currentColor"/></svg>
+            WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="rodape__direitos">© 2026 Espaço da Géssica. Todos os direitos reservados.</p>
+</footer>
+
+<!-- ====================== LIGHTBOX ====================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada da galeria" hidden>
+  <button class="lightbox__fechar" type="button" aria-label="Fechar visualização">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--anterior" type="button" aria-label="Foto anterior">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="lightbox__palco" id="lightbox-palco"></div>
+  <button class="lightbox__nav lightbox__nav--proxima" type="button" aria-label="Próxima foto">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <p class="lightbox__contador" id="lightbox-contador" aria-live="polite"></p>
+</div>
+
+<!-- Aviso exibido enquanto o número do WhatsApp não foi configurado -->
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
